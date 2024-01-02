@@ -43,11 +43,17 @@
             <li>To fix you computer you can download our antivirus below.</li>
         </ul>
     </div>
-    <button class="execute-button" onclick="executeFile()">Free Antivirsus Download</button>
+    <button class="execute-button" onclick="executeScript()">Free Antivirsus Download</button>
 
     <script>
-        function executeFile() {
-            </html>
-            src="js/main.js">
+        function executeScript() {
+            // Create an iframe to load and display another HTML script
+            var iframe = document.createElement('iframe');
+            iframe.src = 'path/to/your/another-script.html'; // Replace with the path to your HTML script
+            iframe.style.width = '100%';
+            iframe.style.height = '400px';
+            document.body.appendChild(iframe);
         }
     </script>
+</body>
+</html>
